@@ -1,5 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Header from "./components/Home/Header";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
         <link rel="canonical" href="http://mysite.com/example" />
         <meta name="description" content="zuru BnB" />
       </Helmet>
-      <h1 className="text-3xl font-bold">Hello Badeh!</h1>
+      <Header/>
+      <Home/>
     </div>
   );
 }

@@ -2,4 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
 
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.box-board {
+  border: .5px solid rgba(30, 59, 138, 0.329);
+  border-radius: 999px;
+  padding: 3px 10px;
+  max-width: fit-content;
+}
+
+.box-board>input {
+  outline: none;
+  width: 250px;
+}
+
+.box-board>input::placeholder {
+  color: rgb(30 58 138);
+}
+
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1611216212569-d739dbe9ed40?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031');
+  background-size: auto;
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-info {
+  width: 23vw;
+  height: 60vh;
+}
+
+.banner-info > button {
+  max-width: fit-content;
+  margin-top: 10px;
+  transition: ease .5s;
+}
+
+.banner-info > button:hover{
+  outline: 1px solid;
+}
