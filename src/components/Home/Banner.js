@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import { Button } from '@material-ui/core'
 import Search from './Search';
+import { useHistory } from 'react-router-dom';
 
 
 function Banner() {
 const [unhide, setUnhide] = useState(false);
+const history = useHistory();
 
 const handleHide = () => {
   setUnhide(unhide=>!unhide);
@@ -24,7 +26,7 @@ const handleHide = () => {
       <div className='banner-info bg-black text-white px-4 flex flex-col justify-end pb-4 leading-relaxed'>
         <h2 className='font-bold text-2xl'>It's a Big World out there, Go Explore 🚀</h2>
         <h5 className='font-thin'>We always make our customers happy by providing many choices.</h5>
-        <Button className="ton">
+        <Button className="ton" onClick={()=>history.push('/search')}>
           Explore Nearby
         </Button>
       </div>
