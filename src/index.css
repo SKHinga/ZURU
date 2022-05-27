@@ -8,6 +8,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.material-button {
+  background-color: white !important;
+  font-weight: 500 !important;
+  text-transform: inherit !important;
+  color: rgb(30 58 138) !important;
+}
+.ton {
+  background-color: rgb(30 58 138) !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  text-transform: inherit !important;
+  transition: ease 1s !important;
+}
+
+.ton:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 .box-board {
   border: .5px solid rgba(30, 59, 138, 0.329);
   border-radius: 999px;
@@ -20,10 +39,6 @@
   width: 250px;
 }
 
-.box-board>input::placeholder {
-  color: rgb(30 58 138);
-}
-
 .banner {
   background-image: url('https://images.unsplash.com/photo-1611216212569-d739dbe9ed40?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031');
   background-size: auto;
@@ -34,7 +49,7 @@
 }
 
 .banner-info {
-  width: 23vw;
+  width: 25%;
   height: 60vh;
 }
 
@@ -44,6 +59,61 @@
   transition: ease .5s;
 }
 
-.banner-info > button:hover{
-  outline: 1px solid;
+.search {
+  top: 8%;
+  left: 25%;
+}
+.put {
+  outline: none;
+  width: 100%;
+}
+.find>Button {
+  width: 100%;
+  margin-top: 3px;
+  font-weight: 500 !important;
+  text-transform: inherit !important;
+  color: #fff !important;
+  background-color: rgb(30 58 138) !important;
+  transition: ease 1s !important;
+}
+.find>Button:hover{
+  background-color: #fff !important;
+  color: rgb(30 58 138) !important;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0 0 0 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.07);
+}
+
+.card > img {
+  object-fit: fill;
+  min-width: 300px;
+  min-height: 200px;
+  width: 100%;
+}
+
+.card-info {
+  margin-top: -9px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1;
+}
+.cann {
+  border-top: 1px solid lightgrey;
+  background-color: #f7f7f7;
+}
+.amaze > Button {
+  text-transform: inherit !important;
+  border-radius: 30px;
+  margin: 5px;
 }
